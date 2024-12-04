@@ -2,9 +2,9 @@
 
 from sys import argv
 
-print "const char* %s[] = {" % argv[1]
+print("const char* %s[] = {" % argv[1])
 with open(argv[2]) as f:
     for line in f.readlines():
-        print '  "%s",' % line.strip()
-print "  0"
-print "};"
+        print('  "%s",' % line.strip())
+print("  0")
+print("};")
